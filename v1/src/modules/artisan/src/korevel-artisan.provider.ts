@@ -26,11 +26,11 @@ export class KorevelArtisanProvider implements IKorevelProvider {
       window.korevel = window.korevel || {};
       window.korevel.artisan = artisan;
 
-      console.log(
-        "%c Korevel Artisan %c Ready in Dev Console ",
-        "background: #f4645f; color: #fff; border-radius: 3px 0 0 3px;",
-        "background: #333; color: #fff; border-radius: 0 3px 3px 0;",
-      );
+      // console.log(
+      //   "%c Korevel Artisan %c Ready in Dev Console ",
+      //   "background: #f4645f; color: #fff; border-radius: 3px 0 0 3px;",
+      //   "background: #333; color: #fff; border-radius: 0 3px 3px 0;",
+      // );
     }
   }
 }
