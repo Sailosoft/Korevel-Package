@@ -2,13 +2,18 @@ export type KorevelHttpHandle = (
   request: IKorevelRequest<unknown>,
 ) => Promise<IKorevelResponse> | IKorevelResponse | unknown;
 
-export interface IKorevelRequest<TBody = unknown> {
+export interface IKorevelRequest<
+  TBody = unknown,
+  THeader = Record<string, string>,
+> {
   id?: number;
   body: TBody;
   bodyString: string;
   url: string;
   queryParams: Record<string, string | string[] | null | undefined>;
   params: Record<string, string>;
+  headers: THeader;
+  originalRequest: unknown;
 }
 
 export interface IKorevelResponse<T = unknown> {

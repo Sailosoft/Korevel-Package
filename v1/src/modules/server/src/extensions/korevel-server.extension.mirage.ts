@@ -31,6 +31,8 @@ export class KorevelServerExtensionMirage {
       queryParams: request.queryParams,
       params: request.params,
       bodyString: request.requestBody,
+      headers: request.requestHeaders,
+      originalRequest: request,
     };
 
     return payload;
