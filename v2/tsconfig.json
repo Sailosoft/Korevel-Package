@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "module": "System",
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "composite": true, // REQUIRED: Enables project references
+    "declaration": true, // REQUIRED: Generates .d.ts files for other projects to read
+    "declarationMap": true,
+    "emitDeclarationOnly": true, // Replaces noEmit: true
+    "noEmit": false, // Must be false or omitted
+    "strict": true,
+    "baseUrl": ".",
+    "types": [],
+    "paths": {
+      "dexie": ["./types/dexiejs/dexie.d.ts"]
+    }
+  },
+  "include": ["src/**/*", "types/**/*", "types"]
+}
